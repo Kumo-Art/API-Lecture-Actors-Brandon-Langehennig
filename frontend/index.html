@@ -18,7 +18,8 @@
         <input id="director" placeholder="Director" required />
         <input id="year" type="number" placeholder="Year" required />
         <input id="rating" type="number" min="1" max="10" placeholder="Rating" required />
-        <button>Add movie</button>
+        <button id="save-button">Add movie</button>
+        <button id="cancel-button" hidden>Cancel</button>
       </form>
 
       <!-- Empty for now. script.js fills it with one <li> per movie from GET /api/movies. -->
@@ -26,6 +27,6 @@
     </main>
 
     <!-- Load the script last, so every element above already exists when it runs. -->
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
